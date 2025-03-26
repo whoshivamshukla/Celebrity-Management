@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrity Management Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <div class="logo">Celebrity Manager</div>
+                <ul>
+                    <li><a href="#" id="nav-home">Home</a></li>
+                    <li><a href="#" id="nav-celebrities">Celebrities</a></li>
+                    <li><a href="#" id="nav-events">Events</a></li>
+                    <li><a href="#" id="nav-bookings">Bookings</a></li>
+                    <li><a href="#" id="nav-login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home-section" class="active-section">
+                <h1>Welcome to Celebrity Management Platform</h1>
+                <p>Manage celebrity profiles, events, and bookings with ease.</p>
+            </section>
+
+            <section id="celebrities-section" class="hidden-section">
+                <h2>Celebrity Directory</h2>
+                <div id="celebrities-list"></div>
+                <button id="add-celebrity-btn">Add New Celebrity</button>
+            </section>
+
+            <section id="events-section" class="hidden-section">
+                <h2>Upcoming Events</h2>
+                <div id="events-list"></div>
+                <button id="add-event-btn">Create New Event</button>
+            </section>
+
+            <section id="bookings-section" class="hidden-section">
+                <h2>Booking Inquiries</h2>
+                <form id="booking-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Booking Request" required></textarea>
+                    <button type="submit">Submit Booking</button>
+                </form>
+            </section>
+
+            <section id="login-section" class="hidden-section">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                    <p>Don't have an account? <a href="#" id="signup-link">Sign Up</a></p>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Celebrity Management Platform. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
